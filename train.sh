@@ -1,0 +1,35 @@
+#!/bin/sh
+
+python -u train.py --dataset ./data \
+--glove_embed_path ./data/glove.42B.300d.txt \
+--cuda \
+--epoch 100 \
+--loss_epoch_threshold 20 \
+--sketch_loss_coefficient 0.2 \
+--beam_size 10 \
+--toy \
+--bert \
+--enc_type 'shadowgnn_rat' \
+--seed 90 \
+--save "grappa_eval_rephrase_pred" \
+--embed_size 512 \
+--sentence_features \
+--column_pointer \
+--hidden_size 512 \
+--action_embed_size 512 \
+--type_embed_size 512 \
+--col_embed_size 512 \
+--rat_hidden_size 512 \
+--rat_ff_dim 512 \
+--rat_head_num 8 \
+--rat_relation_types 39 \
+--rat_layers 4 \
+--lr_scheduler \
+--batch_size 4 \
+--acc_batch 4 \
+--sldp 0.0 \
+--lr 2.7e-4 \
+--layer_num 1 \
+--ave_layer 4 \
+--lr_scheduler_gammar 0.5 \
+--att_vec_size 512 > "grappa_eval_rephrase_pred.log"

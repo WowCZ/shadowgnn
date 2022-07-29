@@ -1,0 +1,32 @@
+python -u eval.py --dataset ./data \
+--glove_embed_path ./data/glove.42B.300d.txt \
+--cuda \
+--epoch 100 \
+--loss_epoch_threshold 20 \
+--sketch_loss_coefficient 0.2 \
+--beam_size 5 \
+--seed 90 \
+--toy \
+--bert \
+--save save \
+--embed_size 512 \
+--sentence_features \
+--column_pointer \
+--hidden_size 512 \
+--action_embed_size 512 \
+--type_embed_size 512 \
+--col_embed_size 512 \
+--rat_hidden_size 512 \
+--rat_ff_dim 512 \
+--rat_head_num 8 \
+--rat_relation_types 39 \
+--rat_layers 4 \
+--lr_scheduler \
+--batch_size 2 \
+--acc_batch 12 \
+--sldp 0.0 \
+--lr 0.0001 \
+--layer_num 4 \
+--ave_layer 1 \
+--lr_scheduler_gammar 0.5 \
+--att_vec_size 512 > "eval_grammar_train.log"

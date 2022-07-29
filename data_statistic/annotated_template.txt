@@ -1,0 +1,11 @@
+wrong annotated data:
+
+
+
+RL: Root1(3) Root(4) Sel(0) A(3) V(0) C1(0) C(0) Filter(5) V(0) C1(0) From(1)
+SQL: SELECT count(*) FROM <TABLE> WHERE <COLUMN>  >  <VALUE>
+TP: what is the total number of <TABLE> that has more than <VALUE> <COLUMN> ?
+
+RL: Root1(3) Root(6) Sel(2) A(0) V(0) C1(0) A(0) V(0) C1(0) A(0) V(0) C1(0) Order(1) C1(0) From(1)
+SQL: SELECT <COLUMN> ,  <COLUMN> ,  <COLUMN> FROM <TABLE> ORDER BY <COLUMN>
+TP: what is the total number of <TABLE> that has more than <VALUE> <COLUMN> ?
